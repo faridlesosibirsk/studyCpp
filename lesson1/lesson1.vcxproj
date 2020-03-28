@@ -151,6 +151,8 @@
     <ClCompile Include="lesson1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="a.h" />
+    <ClInclude Include="b.h" />
     <ClInclude Include="hello.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

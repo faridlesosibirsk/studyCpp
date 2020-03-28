@@ -1,7 +1,7 @@
 #include "hello.h"
 #include <iostream>
 
-hello::hello()
+void hello()
 {
 	std::cout << "Hello World!\n";
 }

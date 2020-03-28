@@ -26,5 +26,11 @@
     <ClInclude Include="hello.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="a.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="b.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

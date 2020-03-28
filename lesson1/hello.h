@@ -1,7 +1,4 @@
-#pragma once
-class hello
-{
-public:
-	hello();
-};
+//#pragma once
+
+void hello();
 
