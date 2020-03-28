@@ -2,10 +2,63 @@
 //
 
 #include <iostream>
+#include <string>
+#include <sstream>
 
 int main()
 {
-   // std::cout << "Hello World!\n";
+   // массивы
+    //int array[10];
+    //int array[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    //int array[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    //int array[10] = { 0 };
+    //char array[] = {'H', 'e', 'l', 'l', 'o'};
+    //char array[] = "Hello";
+    //int M[2][2];
+    //int N[2][2] = { {1, 2}, {3, 4} };
+    //int countElementsArray = sizeof(array) / sizeof(array[0]);
+
+    // указатели
+    //int *p; // определили указатель p
+    //char* p;
+    //int a;
+    //int b;
+    //p = &a; // взять адрес переменной a
+    //b = *p; // взять значение по адресу p
+
+    // связь указателей и массивов
+    //char array[10];
+    //char *p;
+    //p = &array[0];
+    //p = array;
+    //array = p;
+
+
+    // арифметика указателей
+    //int i[10];
+    //char c[10];
+    //int *pi = &i[0]; // указатель на начало массива i
+    //char* pc = &c[0]; // указатель на начало массива с
+    //pi += 1;
+    //pc++;
+
+    // различие между указателями разных типов
+    //char c[10];
+    //int* pi = &c[0];
+
+    //print begin
+    std::stringstream ss;
+
+    //ss << array << std::endl;
+    //ss << array[12] << std::endl;
+    //ss << sizeof(array) << " - size array byte" << std::endl ;
+    //ss << countElementsArray << " - size array elements";
+
+    //ss << p; // вывести адресс p
+    //ss << pc; // вывести адресс p
+
+    std::cout << ss.str();
+    //print end
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
