@@ -22,25 +22,37 @@ int main()
     {
         M[i] = (int*)malloc(N*sizeof(int*));
     }//M[i][j]=*(*(M+i)+j)
+    //free(M);
+    for (int j = 0; j < N; j++)
+    {
+        free(M[j]);
+    }
+    free(M);// Д/З
+    // calloc M[i][j] = {0}
+    // realloc 
+    //int* rr = (int*)malloc(sizeof(int)*1000);
+    //rr[0] = 10;
+    //rr = realloc(rr, sizeof(int)*10000); ???
+    int* rr = new int[1000];
 
 
     //a1 = 3; // a1 : необъявленный идентификатор
 
     //std::cout << "Hello World!\n";
-    int x = 10;
-    int y = 20;
+    //int x = 10;
+    //int y = 20;
     //swap(&x, &y);
-    swap(x, y);
+    //swap(x, y);
     // print
-    std::cout << "x = " << x << std::endl;
-    std::cout << "y = " << y;
+    //std::cout << "x = " << x << std::endl;
+    //std::cout << "y = " << y;
     //
     //int &n; // ошибка, ссылка должнабыть инициализированна
     //int &n = NULL; // ошибка, ссылка не может быть = NULL
 
     // & взять адрес переменной
-    int a = 5;
-    int* p = &a; // здесь
+    //int a = 5;
+    //int* p = &a; // здесь
 
     // & когда ссылка заменяется на указатель
     // void swap(int &a, int &b) { // здесь
