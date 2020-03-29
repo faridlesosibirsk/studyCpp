@@ -18,9 +18,15 @@
     <ClCompile Include="lesson3.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="hello.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="hello.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

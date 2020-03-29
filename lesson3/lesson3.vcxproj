@@ -147,9 +147,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="hello.cpp" />
     <ClCompile Include="lesson3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="hello.h" />
     <ClInclude Include="swap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -3,8 +3,29 @@
 
 #include <iostream>
 #include "swap.h"
+#include <stdlib.h>
+
+int ff = 0; // глобальная переменная
+
 int main()
 {
+    // Динамическая память
+    int* pp = (int*)malloc(10000*sizeof(int));
+    pp = (int*)malloc(10 * sizeof(int)); // memory leak
+    free(pp);
+
+    // двумерный массив
+    int N = 10;
+    //int *M = (int*)malloc(sizeof(int)*N*N);//M[i][j]=M[i*N+j]
+    int** M = (int**)malloc(N * sizeof(int*));//M[i][j]
+    for (int i = 0; i < N; i++)
+    {
+        M[i] = (int*)malloc(N*sizeof(int*));
+    }//M[i][j]=*(*(M+i)+j)
+
+
+    //a1 = 3; // a1 : необъявленный идентификатор
+
     //std::cout << "Hello World!\n";
     int x = 10;
     int y = 20;
@@ -14,6 +35,16 @@ int main()
     std::cout << "x = " << x << std::endl;
     std::cout << "y = " << y;
     //
+    //int &n; // ошибка, ссылка должнабыть инициализированна
+    //int &n = NULL; // ошибка, ссылка не может быть = NULL
+
+    // & взять адрес переменной
+    int a = 5;
+    int* p = &a; // здесь
+
+    // & когда ссылка заменяется на указатель
+    // void swap(int &a, int &b) { // здесь
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
